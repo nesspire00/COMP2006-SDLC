@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="552.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sdlcgame.QuizController">
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="358.0" minWidth="10.0" prefWidth="180.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="358.0" minWidth="0.0" prefWidth="323.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="525.0" minWidth="10.0" prefWidth="98.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="280.0" minHeight="10.0" prefHeight="174.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="247.0" minHeight="6.0" prefHeight="149.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="45.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <children>
+            <RadioButton fx:id="opt1" mnemonicParsing="false" text="1">
+               <toggleGroup>
+                  <ToggleGroup fx:id="options" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="opt2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="2" toggleGroup="$options" />
+            <RadioButton fx:id="opt3" layoutX="120.0" layoutY="10.0" mnemonicParsing="false" text="3" toggleGroup="$options" />
+            <RadioButton fx:id="opt4" layoutX="226.0" layoutY="10.0" mnemonicParsing="false" text="4" toggleGroup="$options" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+      <ImageView fitHeight="143.0" fitWidth="446.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <image>
+            <Image url="@sdfsdfsdfsdf.png" />
+         </image>
+      </ImageView>
+      <Label text="nameLabel" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="40.0" right="20.0" />
+         </padding>
+      </Label>
+      <ImageView fitHeight="142.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <image>
+            <Image url="@-text.png" />
+         </image>
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" top="20.0" />
+         </GridPane.margin>
+      </ImageView>
+      <Label fx:id="questionText" prefHeight="221.0" prefWidth="385.0" text="questionLabel" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </Label>
+      <HBox GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <children>
+            <Region HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Region>
+            <Button mnemonicParsing="false" onAction="#checkInput" prefHeight="46.0" prefWidth="76.0" rotate="22.5" text="Submit">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <VBox GridPane.columnIndex="2">
+         <children>
+            <Label contentDisplay="TOP" prefHeight="39.0" prefWidth="325.0" text="       SDLC Quiz" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="33.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Label>
+            <Label contentDisplay="TOP" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="325.0" text="                  Stage 1">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</GridPane>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sdlcgame.DialogueController">
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="358.0" minWidth="10.0" prefWidth="180.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="358.0" minWidth="0.0" prefWidth="306.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="525.0" minWidth="10.0" prefWidth="115.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="280.0" minHeight="10.0" prefHeight="174.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="247.0" minHeight="6.0" prefHeight="149.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="143.0" fitWidth="326.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <image>
+            <Image url="@sdfsdfsdfsdf.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="name" text="nameLabel" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="40.0" right="20.0" />
+         </padding>
+      </Label>
+      <ImageView fitHeight="142.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <image>
+            <Image url="@-text.png" />
+         </image>
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" top="20.0" />
+         </GridPane.margin>
+      </ImageView>
+      <Label fx:id="dialogueLabel" prefHeight="89.0" prefWidth="455.0" text="mmjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <children>
+            <Region HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Region>
+            <Button fx:id="dialogueNext" mnemonicParsing="false" onAction="#handleDialogueButtonPress" text="Next -&gt;">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Label contentDisplay="TOP" prefHeight="139.0" prefWidth="304.0" text="SDLC Stage 1" textAlignment="CENTER" GridPane.columnIndex="2">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </padding>
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>
